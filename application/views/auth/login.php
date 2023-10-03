@@ -8,7 +8,8 @@
 
 <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
 
-<link href="assets/css/tjl.css" rel="stylesheet"><!-- Outer Row -->
+<link href="assets/css/tjl.css" rel="stylesheet">
+<!-- Outer Row -->
 
 <div class="row justify-content-center mt-5 pt-lg-5">
 
@@ -22,7 +23,7 @@
                     <div class="col-lg-6">
                         <div class="p-5">
                             <div class="text-center mb-4">
-                                <h1 class="h4 text-gray-900">APLIKASI TJLSP PURBALINGGA</h1>
+                                <h1 class="h4 text-gray-900">APLIKASI TJLSP PURBALINGGA PERWIRA</h1>
                                 <span class="text-muted">Login</span>
                             </div>
                             <?= $this->session->flashdata('pesan'); ?>
