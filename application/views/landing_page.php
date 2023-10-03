@@ -66,7 +66,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link click-scroll" href="#section_5">Contact Us</a>
+                                <a class="nav-link click-scroll" href="#section_5">Kontak Kami</a>
                             </li>
 
                             
