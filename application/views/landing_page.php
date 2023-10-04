@@ -162,7 +162,7 @@
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-0">
                             <div class="member-block">
                                 <div class="member-block-image-wrap">
-                                    <img src="assets/images/dinsos.jpg" class="member-block-image img-fluid" alt="">
+                                    <img src="assets/img/dinsos.jpg" class="member-block-image img-fluid" alt="">
 
                                     <ul class="social-icon">
                                         <li class="social-icon-item">
@@ -186,7 +186,7 @@
                         <div class="col-lg-3 col-md-6 col-12">
                             <div class="member-block">
                                 <div class="member-block-image-wrap">
-                                    <img src="assets/images/dinko.jpg" class="member-block-image img-fluid" alt="">
+                                    <img src="assets/img/dinko.jpg" class="member-block-image img-fluid" alt="">
 
                                     <ul class="social-icon">
                                         <li class="social-icon-item">
@@ -422,7 +422,7 @@
                             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                                 <div class="custom-block-image-wrap">
                                     <a href="event-detail.html">
-                                        <img src="assets/images/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="">
+                                        <img src="assets/img/professional-golf-player.jpg" class="custom-block-image img-fluid" alt="">
 
                                         <i class="custom-block-icon bi-link"></i>
                                     </a>
@@ -471,7 +471,7 @@
                             <div class="col-lg-4 col-md-8 col-12 order-1 order-lg-0">
                                 <div class="custom-block-image-wrap">
                                     <a href="event-detail.html">
-                                        <img src="assets/images/girl-taking-selfie-with-friends-golf-field.jpg" class="custom-block-image img-fluid" alt="">
+                                        <img src="assets/img/girl-taking-selfie-with-friends-golf-field.jpg" class="custom-block-image img-fluid" alt="">
 
                                         <i class="custom-block-icon bi-link"></i>
                                     </a>
@@ -575,7 +575,7 @@
                                     </div>
                                 </div>
 
-                                <img src="assets/images/WorldMap.svg" class="img-fluid" alt="">
+                                <img src="assets/img/WorldMap.svg" class="img-fluid" alt="">
                             </div>
                         </div>
 
