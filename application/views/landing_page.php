@@ -36,7 +36,7 @@
             <nav class="navbar navbar-expand-lg">                
                 <div class="container">
                     <a href="index.html">
-                        <img src="assets/images/apl.png" class="" alt="">
+                        <img src="assets/img/apl.png" class="" alt="">
                        
 
                     <div class="d-lg-none ms-auto me-3">
