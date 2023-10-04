@@ -132,7 +132,7 @@
 
                         <div class="col-lg-6 col-12">
                             <div class="ratio ratio-16x9">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/eAqVzdVziFI?si=xuwqXbb87WJEqukC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Bl46qTHRp3c?si=y2v4panXzr_wOshj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
 
@@ -575,7 +575,7 @@
                                     </div>
                                 </div>
 
-                                <img src="assets/img/WorldMap.svg" class="img-fluid" alt="">
+                                <img src="assets/imag/WorldMap.svg" class="img-fluid" alt="">
                             </div>
                         </div>
 
