@@ -211,9 +211,13 @@
             </section>
 
             <div>
-            <h3>FORUM TJSLP</h3>
-            <p>Forum TJSLP Kabupaten Purbalingga</p>
+            <h3 align="center">FORUM TJSLP</h3>
+            <p align="center">Forum TJSLP Kabupaten Purbalingga</p>
 
+            </div>
+            <br>
+            <div>
+            <img src="<?= base_url('assets') ?>/img/tiwi.jpeg">
             </div>
 
 
