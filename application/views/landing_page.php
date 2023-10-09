@@ -79,7 +79,7 @@
                                     <li><a class="dropdown-item" href="">Event Detail</a></li>
                                 </ul>
                                 <li class="nav-item">
-                                <a class="nav-link inactive" href="http://localhost/tjlsppbg/login">Login</a>
+                                <a class="nav-link inactive" href="http://localhost/tjlsppbg/auth">Login</a>
                       </li>
                             </li>
                         </ul>
@@ -213,11 +213,19 @@
             <div>
             <h3 align="center">FORUM TJSLP</h3>
             <p align="center">Forum TJSLP Kabupaten Purbalingga</p>
-
             </div>
             <br>
-            <div>
-            <img src="<?= base_url('assets') ?>/img/tiwi.jpeg">
+            
+            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="member">
+            <img src="assets/img/tiwi.jpeg" class="img-fluid" alt=""></div>
+              <div class="member-info">
+                <h4>Dyah Hayuning Pratiwi SE BEcon MM</h4>
+                <span>PEMBINA</span>
+                <span>BUPATI PURBALINGGA</span>
+              </div>
+            </div>
+          </div>
             </div>
 
 

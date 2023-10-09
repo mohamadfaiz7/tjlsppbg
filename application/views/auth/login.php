@@ -1,16 +1,4 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
-
-<link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-<link href="assets/css/bootstrap-icons.css" rel="stylesheet">
-
-<link href="assets/css/tjl.css" rel="stylesheet">
 <!-- Outer Row -->
-
 <div class="row justify-content-center mt-5 pt-lg-5">
 
     <div class="col-xl-10 col-lg-12 col-md-9">
@@ -23,7 +11,7 @@
                     <div class="col-lg-6">
                         <div class="p-5">
                             <div class="text-center mb-4">
-                                <h1 class="h4 text-gray-900">APLIKASI TJLSP PURBALINGGA</h1>
+                                <h1 class="h4 text-gray-900">Aplikasi TJLSP Purbalingga</h1>
                                 <span class="text-muted">Login</span>
                             </div>
                             <?= $this->session->flashdata('pesan'); ?>
