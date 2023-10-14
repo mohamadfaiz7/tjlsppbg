@@ -211,21 +211,30 @@
             </section>
 
             <div>
-            <h3 align="center">FORUM TJSLP</h3>
-            <p align="center">Forum TJSLP Kabupaten Purbalingga</p>
+            <h3 align="center">FORUM TJLSP</h3>
+            <p align="center">Forum TJLSP Kabupaten Purbalingga</p>
             </div>
             <br>
             
-            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
-            <div class="member">
-            <img src="assets/img/tiwi.jpeg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Dyah Hayuning Pratiwi SE BEcon MM</h4>
-                <span>PEMBINA</span>
-                <span>BUPATI PURBALINGGA</span>
-              </div>
-            </div>
-          </div>
+            <div class="container">
+                <main class="grid">
+                    <article>
+                    <img src="assets/img/tiwi.jpeg" width="300px" height="300px">
+                    <div class="konten">
+                        <h2> Dyah Hayuning Pratiwi SE BEcon MM </h2>
+                        <p>Bupati Purbalingga</p>
+
+                    </div>
+                    </article>
+                    <article>
+                    <img src="assets/img/dono.jpeg" width="300px" height="300px">
+                    <div class="konten">
+                        <h2> H. Sudono, ST,MT </h2>
+                        <p> Wakil Bupati Purbalingga</p>
+
+                    </div>
+                    </article>
+                </main>
             </div>
 
 

@@ -46,7 +46,7 @@
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-university"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">Pengadaan Barang</div>
+                <div class="sidebar-brand-text mx-3">TJLSP PURBALINGGA</div>
             </a>
 
             <!-- Nav Item - Dashboard -->
@@ -69,7 +69,7 @@
             <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('supplier'); ?>">
                     <i class="fas fa-fw fa-users"></i>
-                    <span>Supplier</span>
+                    <span>Kategori</span>
                 </a>
             </li>
 

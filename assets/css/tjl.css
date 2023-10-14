@@ -1272,4 +1272,17 @@ strong {
 		font-size: 12px;
 		padding: 4px 12px;
 	}
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 80px;
+		align-items: center;
+		grid-gap: 40px;
+	}
+	.grid > article {
+		box-shadow: 15px 15px 15px 0px black;
+		border-radius: 20px;
+		text-align: center;
+		background: #717275;
+	}
 }
