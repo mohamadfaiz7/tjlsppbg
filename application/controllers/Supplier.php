@@ -14,7 +14,7 @@ class Supplier extends CI_Controller
 
     public function index()
     {
-        $data['title'] = "Supplier";
+        $data['title'] = "Kategori";
         $data['supplier'] = $this->admin->get('supplier');
         $this->template->load('templates/dashboard', 'supplier/data', $data);
     }
