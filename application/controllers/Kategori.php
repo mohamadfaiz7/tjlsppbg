@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Supplier extends CI_Controller
+class Kategori extends CI_Controller
 {
     public function __construct()
     {
@@ -15,32 +15,31 @@ class Supplier extends CI_Controller
     public function index()
     {
         $data['title'] = "Kategori";
-        $data['supplier'] = $this->admin->get('supplier');
-        $this->template->load('templates/dashboard', 'supplier/data', $data);
+        $data['kategori'] = $this->admin->get('kategori');
+        $this->template->load('templates/dashboard', 'kategori/data', $data);
     }
 
     private function _validasi()
     {
-        $this->form_validation->set_rules('nama_supplier', 'Nama Supplier', 'required|trim');
-        $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim|numeric');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
+        $this->form_validation->set_rules('nama_kategori', 'Nama Kategori', 'required|trim');
+        $this->form_validation->set_rules('created_at', 'Created At', 'required|trim|numeric');
     }
 
     public function add()
     {
         $this->_validasi();
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Supplier";
-            $this->template->load('templates/dashboard', 'supplier/add', $data);
+            $data['title'] = "Kategori";
+            $this->template->load('templates/dashboard', 'kategori/add', $data);
         } else {
             $input = $this->input->post(null, true);
-            $save = $this->admin->insert('supplier', $input);
+            $save = $this->admin->insert('kategori', $input);
             if ($save) {
                 set_pesan('data berhasil disimpan.');
-                redirect('supplier');
+                redirect('kategori');
             } else {
                 set_pesan('data gagal disimpan', false);
-                redirect('supplier/add');
+                redirect('kategori/add');
             }
         }
     }
@@ -52,19 +51,19 @@ class Supplier extends CI_Controller
         $this->_validasi();
 
         if ($this->form_validation->run() == false) {
-            $data['title'] = "Supplier";
-            $data['supplier'] = $this->admin->get('supplier', ['id_supplier' => $id]);
-            $this->template->load('templates/dashboard', 'supplier/edit', $data);
+            $data['title'] = "Kategori";
+            $data['kategori'] = $this->admin->get('kategori', ['id' => $id]);
+            $this->template->load('templates/dashboard', 'kategori/edit', $data);
         } else {
             $input = $this->input->post(null, true);
-            $update = $this->admin->update('supplier', 'id_supplier', $id, $input);
+            $update = $this->admin->update('kategori', 'id', $id, $input);
 
             if ($update) {
                 set_pesan('data berhasil diedit.');
-                redirect('supplier');
+                redirect('kategori');
             } else {
                 set_pesan('data gagal diedit.');
-                redirect('supplier/edit/' . $id);
+                redirect('kategori/edit/' . $id);
             }
         }
     }
@@ -72,11 +71,11 @@ class Supplier extends CI_Controller
     public function delete($getId)
     {
         $id = encode_php_tags($getId);
-        if ($this->admin->delete('supplier', 'id_supplier', $id)) {
+        if ($this->admin->delete('kategori', 'id', $id)) {
             set_pesan('data berhasil dihapus.');
         } else {
             set_pesan('data gagal dihapus.', false);
         }
-        redirect('supplier');
+        redirect('kategori');
     }
 }

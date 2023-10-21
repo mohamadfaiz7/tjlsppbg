@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title><?= $title; ?> | Aplikasi Pengadaan Barang</title>
+    <title><?= $title; ?> | APLIKASI TJLSP PURBALINGGA</title>
 
     <!-- Custom fonts for this template-->
     <link href="<?= base_url(); ?>assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -67,7 +67,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('supplier'); ?>">
+                <a class="nav-link pb-0" href="<?= base_url('kategori'); ?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Kategori</span>
                 </a>

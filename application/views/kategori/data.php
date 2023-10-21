@@ -8,7 +8,7 @@
                 </h4>
             </div>
             <div class="col-auto">
-                <a href="<?= base_url('supplier/add') ?>" class="btn btn-sm btn-primary btn-icon-split">
+                <a href="<?= base_url('kategori/add') ?>" class="btn btn-sm btn-primary btn-icon-split">
                     <span class="icon">
                         <i class="fa fa-plus"></i>
                     </span>
@@ -24,26 +24,25 @@
             <thead>
                 <tr>
                     <th>No.</th>
-                    <th>Nama</th>
-                    <th>Nomor Telepon</th>
-                    <th>Alamat</th>
+                    <th>Nama Kategori</th>
+                    <th>Created At</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
-                if ($supplier) :
+                if ($kategori) :
                     $no = 1;
-                    foreach ($supplier as $s) :
+                    foreach ($kategori as $s) :
                         ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $s['nama_supplier']; ?></td>
-                            <td><?= $s['no_telp']; ?></td>
-                            <td><?= $s['alamat']; ?></td>
+                            <td><?= $s['nama_kategori']; ?></td>
+                            <td><?= $s['created_at']; ?></td>
+                            
                             <th>
-                                <a href="<?= base_url('supplier/edit/') . $s['id_supplier'] ?>" class="btn btn-circle btn-warning btn-sm"><i class="fa fa-edit"></i></a>
-                                <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('supplier/delete/') . $s['id_supplier'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
+                                <a href="<?= base_url('kategori/edit/') . $s['id'] ?>" class="btn btn-circle btn-warning btn-sm"><i class="fa fa-edit"></i></a>
+                                <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('kategori/delete/') . $s['id'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                             </th>
                         </tr>
                     <?php endforeach; ?>
