@@ -36,18 +36,6 @@
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="no_telp">Nama Kategori</label>
-                    <div class="col-md-9">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-phone"></i></span>
-                            </div>
-                            <input value="<?= set_value('nama_kategori', $kategori['nama_kategori']); ?>" name="nama_kategori" id="nama_kategori" type="text" class="form-control" placeholder="Nama Kategori...">
-                        </div>
-                        <?= form_error('nama_kategori', '<small class="text-danger">', '</small>'); ?>
-                    </div>
-                </div>
-                <div class="row form-group">
                     <label class="col-md-3 text-md-right" for="alamat">Created At</label>
                     <div class="col-md-9">
                         <div class="input-group">

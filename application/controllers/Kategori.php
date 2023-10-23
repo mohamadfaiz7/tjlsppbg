@@ -22,7 +22,7 @@ class Kategori extends CI_Controller
     private function _validasi()
     {
         $this->form_validation->set_rules('nama_kategori', 'Nama Kategori', 'required|trim');
-        $this->form_validation->set_rules('created_at', 'Created At', 'required|trim|numeric');
+        $this->form_validation->set_rules('created_at', 'Created At', 'required|trim');
     }
 
     public function add()
