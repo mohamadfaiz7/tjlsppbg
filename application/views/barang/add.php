@@ -23,52 +23,89 @@
             <div class="card-body">
                 <?= $this->session->flashdata('pesan'); ?>
                 <?= form_open('', [], ['stok' => 0]); ?>
+                <div class="card-body">
+                <?= $this->session->flashdata('pesan'); ?>
+                <?= form_open(); ?>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_barang">ID Barang</label>
-                    <div class="col-md-9">
-                        <input readonly value="<?= set_value('id_barang', $id_barang); ?>" name="id_barang" id="id_barang" type="text" class="form-control" placeholder="ID Barang...">
-                        <?= form_error('id_barang', '<small class="text-danger">', '</small>'); ?>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="nama_barang">Nama Barang</label>
-                    <div class="col-md-9">
-                        <input value="<?= set_value('nama_barang'); ?>" name="nama_barang" id="nama_barang" type="text" class="form-control" placeholder="Nama Barang...">
-                        <?= form_error('nama_barang', '<small class="text-danger">', '</small>'); ?>
-                    </div>
-                </div>
-                <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="jenis_id">Jenis Barang</label>
+                    <label class="col-md-3 text-md-right" for="id_kategori">ID Kategori</label>
                     <div class="col-md-9">
                         <div class="input-group">
-                            <select name="jenis_id" id="jenis_id" class="custom-select">
-                                <option value="" selected disabled>Pilih Jenis Barang</option>
-                                <?php foreach ($jenis as $j) : ?>
-                                    <option <?= set_select('jenis_id', $j['id_jenis']) ?> value="<?= $j['id_jenis'] ?>"><?= $j['nama_jenis'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <div class="input-group-append">
-                                <a class="btn btn-primary" href="<?= base_url('jenis/add'); ?>"><i class="fa fa-plus"></i></a>
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
+                            <input value="<?= set_value('id_kategori'); ?>" name="id_kategori" id="id_kategori" type="text" class="form-control" placeholder="ID Kategori...">
                         </div>
-                        <?= form_error('jenis_id', '<small class="text-danger">', '</small>'); ?>
+                        <?= form_error('id_kategori', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="satuan_id">Satuan Barang</label>
+                    <label class="col-md-3 text-md-right" for="id_desa">ID Desa</label>
                     <div class="col-md-9">
-                        <div class="input-group">
-                            <select name="satuan_id" id="satuan_id" class="custom-select">
-                                <option value="" selected disabled>Pilih Satuan Barang</option>
-                                <?php foreach ($satuan as $s) : ?>
-                                    <option <?= set_select('satuan_id', $s['id_satuan']) ?> value="<?= $s['id_satuan'] ?>"><?= $s['nama_satuan'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                            <div class="input-group-append">
-                                <a class="btn btn-primary" href="<?= base_url('satuan/add'); ?>"><i class="fa fa-plus"></i></a>
-                            </div>
-                        </div>
-                        <?= form_error('satuan_id', '<small class="text-danger">', '</small>'); ?>
+                        <input value="<?= set_value('id_desa'); ?>" name="id_desa" id="id_desa" type="text" class="form-control" placeholder="ID Desa...">
+                        <?= form_error('id_desa', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="id_kecamatan">ID Kecamatan</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('id_kecamatan'); ?>" name="id_kecamatan" id="id_kecamatan" type="text" class="form-control" placeholder="ID Kecamatan...">
+                        <?= form_error('id_kecamatan', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="id_program">ID Program</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('id_program'); ?>" name="id_program" id="id_program" type="text" class="form-control" placeholder="ID Program...">
+                        <?= form_error('id_program', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="id_instansi">ID Instansi</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('id_instansi'); ?>" name="id_instansi" id="id_instansi" type="text" class="form-control" placeholder="ID Instansi...">
+                        <?= form_error('id_instansi', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="tahun">Tahun</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('tahun'); ?>" name="tahun" id="tahun" type="text" class="form-control" placeholder="Tahun...">
+                        <?= form_error('tahun', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="dana_usulan">Dana Usulan</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('dana_usulan'); ?>" name="dana_usulan" id="dana_usulan" type="text" class="form-control" placeholder="Dana Usulan...">
+                        <?= form_error('dana_usulan', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="usulan">Usulan</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('usulan'); ?>" name="usulan" id="usulan" type="text" class="form-control" placeholder="Usulan...">
+                        <?= form_error('usulan', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="alamat">Alamat</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('alamat'); ?>" name="alamat" id="alamat" type="text" class="form-control" placeholder="Alamat...">
+                        <?= form_error('alamat', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="status">Status</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('status'); ?>" name="status" id="status" type="text" class="form-control" placeholder="Status...">
+                        <?= form_error('status', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="created_at">Created At</label>
+                    <div class="col-md-9">
+                        <input value="<?= set_value('created_at'); ?>" name="created_at" id="created_at" type="text" class="form-control" placeholder="Created At...">
+                        <?= form_error('created_at', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="row form-group">
