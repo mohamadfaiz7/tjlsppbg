@@ -27,42 +27,42 @@
                 <?= $this->session->flashdata('pesan'); ?>
                 <?= form_open(); ?>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_kategori">ID Kategori</label>
+                    <label class="col-md-3 text-md-right" for="id_kategori">Kategori</label>
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('id_kategori'); ?>" name="id_kategori" id="id_kategori" type="text" class="form-control" placeholder="ID Kategori...">
+                            <input value="<?= set_value('id_kategori'); ?>" name="id_kategori" id="id_kategori" type="text" class="form-control" placeholder="Kategori...">
                         </div>
                         <?= form_error('id_kategori', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_desa">ID Desa</label>
+                    <label class="col-md-3 text-md-right" for="id_desa">Desa</label>
                     <div class="col-md-9">
-                        <input value="<?= set_value('id_desa'); ?>" name="id_desa" id="id_desa" type="text" class="form-control" placeholder="ID Desa...">
+                        <input value="<?= set_value('id_desa'); ?>" name="id_desa" id="id_desa" type="text" class="form-control" placeholder="Desa...">
                         <?= form_error('id_desa', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_kecamatan">ID Kecamatan</label>
+                    <label class="col-md-3 text-md-right" for="id_kecamatan">Kecamatan</label>
                     <div class="col-md-9">
-                        <input value="<?= set_value('id_kecamatan'); ?>" name="id_kecamatan" id="id_kecamatan" type="text" class="form-control" placeholder="ID Kecamatan...">
+                        <input value="<?= set_value('id_kecamatan'); ?>" name="id_kecamatan" id="id_kecamatan" type="text" class="form-control" placeholder="Kecamatan...">
                         <?= form_error('id_kecamatan', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_program">ID Program</label>
+                    <label class="col-md-3 text-md-right" for="id_program">Program</label>
                     <div class="col-md-9">
-                        <input value="<?= set_value('id_program'); ?>" name="id_program" id="id_program" type="text" class="form-control" placeholder="ID Program...">
+                        <input value="<?= set_value('id_program'); ?>" name="id_program" id="id_program" type="text" class="form-control" placeholder="Program...">
                         <?= form_error('id_program', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_instansi">ID Instansi</label>
+                    <label class="col-md-3 text-md-right" for="id_instansi">Instansi</label>
                     <div class="col-md-9">
-                        <input value="<?= set_value('id_instansi'); ?>" name="id_instansi" id="id_instansi" type="text" class="form-control" placeholder="ID Instansi...">
+                        <input value="<?= set_value('id_instansi'); ?>" name="id_instansi" id="id_instansi" type="text" class="form-control" placeholder="Instansi...">
                         <?= form_error('id_instansi', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
