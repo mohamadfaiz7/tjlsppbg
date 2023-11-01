@@ -227,7 +227,7 @@
             <footer class="sticky-footer bg-light">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Aplikasi Pengadaan Barang 2019 &bull; by <?= anchor('https://www.arfan.id', 'Arfan.id'); ?></span>
+                        <span>Copyright &copy; TJLSP Purbalingga &bull; by <?= anchor('https://www.swu.ac.id', 'STMIK WIDYA UTAMA'); ?></span>
                     </div>
                 </div>
             </footer>
