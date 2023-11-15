@@ -28,7 +28,8 @@
                                 Login
                             </button>
                             <div class="text-center mt-4">
-                                <a class="small" href="<?= base_url('register') ?>">Buat Akun!</a>
+                                <a class="small" href="<?= base_url('landing_page') ?>">Beranda</a> <br>
+                                <a class="small" href="<?= base_url('register') ?>">Register</a>
                             </div>
                             <?= form_close(); ?>
                         </div>
