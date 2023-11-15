@@ -42,7 +42,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-home"></i></span>
                             </div>
-                            <textarea name="created_at" id="created_at" class="form-control" rows="4" placeholder="Created At..."><?= set_value('created_at', $kategori['created_at']); ?></textarea>
+                            <textarea name="created_at" id="created_at" class="form-control" placeholder="Created At..."><?= set_value('created_at', $kategori['created_at']); ?></textarea>
                         </div>
                         <?= form_error('created_at', '<small class="text-danger">', '</small>'); ?>
                     </div>

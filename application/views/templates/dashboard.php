@@ -75,7 +75,7 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link pb-0" href="<?= base_url('kategori'); ?>">
+                <a class="nav-link pb-0" href="<?= base_url('usulan'); ?>">
                     <i class="fas fa-fw fa-users"></i>
                     <span>Usulan</span>
                 </a>
