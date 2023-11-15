@@ -73,20 +73,12 @@
                 </a>
             </li>
 
-            <!-- Nav Item - Pages Collapse Menu -->
+            <!-- Nav Item - Dashboard -->
             <li class="nav-item">
-                <a class="nav-link collapsed " href="#" data-toggle="collapse" data-target="#collapseMaster" aria-expanded="true" aria-controls="collapseMaster">
-                    <i class="fas fa-fw fa-folder"></i>
-                    <span>Barang</span>
+                <a class="nav-link pb-0" href="<?= base_url('kategori'); ?>">
+                    <i class="fas fa-fw fa-users"></i>
+                    <span>Usulan</span>
                 </a>
-                <div id="collapseMaster" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-light py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Master Barang:</h6>
-                        <a class="collapse-item" href="<?= base_url('satuan'); ?>">Satuan Barang</a>
-                        <a class="collapse-item" href="<?= base_url('jenis'); ?>">Jenis Barang</a>
-                        <a class="collapse-item" href="<?= base_url('barang'); ?>">Data Barang</a>
-                    </div>
-                </div>
             </li>
 
             <!-- Divider -->
