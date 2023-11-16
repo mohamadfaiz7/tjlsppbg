@@ -3,22 +3,22 @@
         <div class="card shadow-sm border-bottom-primary">
             <div class="card-header bg-white py-3">
                 <h4 class="h5 align-middle m-0 font-weight-bold text-primary">
-                    Form Laporan
+                    Form Laporan Data
                 </h4>
             </div>
             <div class="card-body">
                 <?= $this->session->flashdata('pesan'); ?>
                 <?= form_open(); ?>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="transaksi">Laporan Transaksi</label>
+                    <label class="col-md-3 text-md-right" for="transaksi">Laporan Data</label>
                     <div class="col-md-9">
                         <div class="custom-control custom-radio">
                             <input value="barang_masuk" type="radio" id="barang_masuk" name="transaksi" class="custom-control-input">
-                            <label class="custom-control-label" for="barang_masuk">Barang Masuk</label>
+                            <label class="custom-control-label" for="barang_masuk">Data Kategori</label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input value="barang_keluar" type="radio" id="barang_keluar" name="transaksi" class="custom-control-input">
-                            <label class="custom-control-label" for="barang_keluar">Barang Keluar</label>
+                            <label class="custom-control-label" for="barang_keluar">Data Usulan</label>
                         </div>
                         <?= form_error('transaksi', '<span class="text-danger small">', '</span>'); ?>
                     </div>
