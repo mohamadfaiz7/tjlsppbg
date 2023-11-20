@@ -5,5 +5,6 @@ class Landing_Page extends CI_Controller {
 	{
 
 		$this->load->view('landing_page');
+		
 	}
 }

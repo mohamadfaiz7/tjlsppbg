@@ -52,7 +52,6 @@ class Admin_model extends CI_Model
     {
         $this->db->select('*');
         $this->db->join('user u', 'bm.user_id = u.id_user');
-        $this->db->join('supplier sp', 'bm.supplier_id = sp.id_supplier');
         $this->db->join('barang b', 'bm.barang_id = b.id_barang');
         $this->db->join('satuan s', 'b.satuan_id = s.id_satuan');
         if ($limit != null) {

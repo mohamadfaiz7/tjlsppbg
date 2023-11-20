@@ -216,26 +216,28 @@
             </div>
             <br>
             
-            <div class="container">
-                <main class="grid">
-                    <article>
-                    <img src="assets/img/tiwi.jpeg" width="300px" height="300px">
-                    <div class="konten">
-                        <h2> Dyah Hayuning Pratiwi SE BEcon MM </h2>
-                        <p>Bupati Purbalingga</p>
+            <div class="row" align="center">
 
-                    </div>
-                    </article>
-                    <article>
-                    <img src="assets/img/dono.jpeg" width="300px" height="300px">
-                    <div class="konten">
-                        <h2> H. Sudono, ST,MT </h2>
-                        <p> Wakil Bupati Purbalingga</p>
-
-                    </div>
-                    </article>
-                </main>
+            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up">
+                <div class="member">
+                <div class="pic"><img src="assets/img/tiwi.jpeg" width="300px" height="300px"></div>
+                <div class="member-info">
+                 <h4>Dyah Hayuning Pratiwi SE BEcon MM</h4>
+                 <span>BUPATI PURBALINGGA</span>
+                 </div>
+                 </div>
             </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                <div class="pic"><img src="assets/img/dono.jpeg" width="300px" height="300px"></div>
+                <div class="member-info">
+                 <h4>H. Sudono, ST,MT.</h4>
+                 <span>WAKIL BUPATI PURBALINGGA</span>
+                </div>
+                </div>
+            </div>
+
 
 
             <section class="section-bg-image">
