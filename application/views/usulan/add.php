@@ -46,7 +46,7 @@
                             <select name="id_desa" id="id_desa" class="custom-select">
                                 <option value="" selected disabled>Pilih Desa</option>
                                 <?php foreach ($desa as $k) : ?>
-                                    <option <?= set_select('nama_desa', $k['id_desa']) ?> value="<?= $k['id_desa'] ?>"><?= $k['nama_desa'] ?></option>
+                                    <option <?= set_select('id_desa', $k['id_desa']) ?> value="<?= $k['id_desa'] ?>"><?= $k['nama_desa'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -62,7 +62,7 @@
                             <select name="id_kecamatan" id="id_kecamatan" class="custom-select">
                                 <option value="" selected disabled>Pilih Kecamatan</option>
                                 <?php foreach ($kecamatan as $k) : ?>
-                                    <option <?= set_select('id_kecamatan', $k['id']) ?> value="<?= $k['id'] ?>"><?= $k['id_kecamatan'] ?></option>
+                                    <option <?= set_select('id_kecamatan', $k['id_kecamatan']) ?> value="<?= $k['id_kecamatan'] ?>"><?= $k['nama_kecamatan'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>

@@ -64,6 +64,9 @@ class Usulan extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = "Usulan";
+            $data['kategori'] = $this->admin->get('kategori');
+            $data['desa'] = $this->admin->get('desa');
+            $data['kecamatan'] = $this->admin->get('kecamatan');
             $data['usulan'] = $this->admin->get('usulan', ['id' => $id]);
             $this->template->load('templates/dashboard', 'usulan/edit', $data);
         } else {

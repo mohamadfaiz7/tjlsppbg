@@ -20,6 +20,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="card-body">
                 <?= $this->session->flashdata('pesan'); ?>
                 <?= form_open('', [], ['id' => $usulan['id']]); ?>
@@ -27,10 +28,12 @@
                     <label class="col-md-3 text-md-right" for="id_kategori">Kategori</label>
                     <div class="col-md-9">
                         <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"></span>
-                            </div>
-                            <input value="<?= set_value('id_kategori', $usulan['id_kategori']); ?>" name="id_kategori" id="id_kategori" type="text" class="form-control" placeholder="kategori...">
+                            <select name="id_kategori" id="id_kategori" class="custom-select">
+                                <option value="" selected disabled>Pilih Kategori</option>
+                                <?php foreach ($kategori as $k) : ?>
+                                    <option <?= set_select('id_kategori', $k['id']) ?> value="<?= $k['id'] ?>"><?= $k['nama_kategori'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                         <?= form_error('id_kategori', '<small class="text-danger">', '</small>'); ?>
                     </div>
@@ -40,10 +43,12 @@
                     <label class="col-md-3 text-md-right" for="id_desa">Desa</label>
                     <div class="col-md-9">
                         <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"></i></span>
-                            </div>
-                            <input value="<?= set_value('id_desa', $usulan['id_desa']); ?>" name="id_desa" id="id_desa" type="text" class="form-control" placeholder="Desa...">
+                            <select name="id_desa" id="id_desa" class="custom-select">
+                                <option value="" selected disabled>Pilih Desa</option>
+                                <?php foreach ($desa as $k) : ?>
+                                    <option <?= set_select('id_desa', $k['id_desa']) ?> value="<?= $k['id_desa'] ?>"><?= $k['nama_desa'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                         <?= form_error('id_desa', '<small class="text-danger">', '</small>'); ?>
                     </div>
@@ -53,10 +58,12 @@
                     <label class="col-md-3 text-md-right" for="id_kecamatan">Kecamatan</label>
                     <div class="col-md-9">
                         <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"></i></span>
-                            </div>
-                            <input value="<?= set_value('id_kecamatan', $usulan['id_desa']); ?>" name="id_kecamatan" id="id_kecamatan" type="text" class="form-control" placeholder="Kecamatan...">
+                            <select name="id_kecamatan" id="id_kecamatan" class="custom-select">
+                                <option value="" selected disabled>Pilih Kecamatan</option>
+                                <?php foreach ($kecamatan as $k) : ?>
+                                    <option <?= set_select('id_kecamatan', $k['id_kecamatan']) ?> value="<?= $k['id_kecamatan'] ?>"><?= $k['nama_kecamatan'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
                         </div>
                         <?= form_error('id_kecamatan', '<small class="text-danger">', '</small>'); ?>
                     </div>
