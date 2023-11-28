@@ -12,6 +12,15 @@ class Admin_model extends CI_Model
         }
     }
 
+    public function get_join()
+    {
+        $this->db->join('kategori b', 'a.id_kategori = b.id');
+        $this->db->join('kecamatan c', 'a.id_kecamatan = c.id_kecamatan');
+        $this->db->join('desa d', 'a.id_desa = d.id_desa');
+       // $this->db->order_by('id_barang');
+        return $this->db->get('usulan a')->result_array();
+    }
+
     public function update($table, $pk, $id, $data)
     {
         $this->db->where($pk, $id);

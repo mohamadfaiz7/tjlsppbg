@@ -15,8 +15,14 @@ class Usulan extends CI_Controller
     public function index()
     {
         $data['title'] = "usulan";
-        $data['usulan'] = $this->admin->get('usulan');
+        $data['usulan'] = $this->admin->get_join();
         $this->template->load('templates/dashboard', 'usulan/data', $data);
+    }
+
+    public function get_desa($getId)
+    {
+        $id = encode_php_tags($getId);
+        echo json_encode($this->db->get_where('desa', [ 'id_kecamatan' => $id ])->result_array());
     }
 
     private function _validasi()

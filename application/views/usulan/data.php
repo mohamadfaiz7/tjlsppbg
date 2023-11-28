@@ -46,9 +46,9 @@
                         ?>
                         <tr>
                             <td><?= $no++; ?></td>
-                            <td><?= $s['id_kategori']; ?></td>
-                            <td><?= $s['id_desa']; ?></td>
-                            <td><?= $s['id_kecamatan']; ?></td>
+                            <td><?= $s['nama_kategori']; ?></td>
+                            <td><?= $s['nama_desa']; ?></td>
+                            <td><?= $s['nama_kecamatan']; ?></td>
                             <td><?= $s['id_program']; ?></td>
                             <td><?= $s['id_instansi']; ?></td>
                             <td><?= $s['tahun']; ?></td>

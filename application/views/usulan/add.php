@@ -39,21 +39,6 @@
                     </div>
                 </div>
 
-                <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="id_desa">Desa</label>
-                    <div class="col-md-9">
-                        <div class="input-group">
-                            <select name="id_desa" id="id_desa" class="custom-select">
-                                <option value="" selected disabled>Pilih Desa</option>
-                                <?php foreach ($desa as $k) : ?>
-                                    <option <?= set_select('id_desa', $k['id_desa']) ?> value="<?= $k['id_desa'] ?>"><?= $k['nama_desa'] ?></option>
-                                <?php endforeach; ?>
-                            </select>
-                        </div>
-                        <?= form_error('id_desa', '<small class="text-danger">', '</small>'); ?>
-                    </div>
-                </div>
-
 
                 <div class="row form-group">
                     <label class="col-md-3 text-md-right" for="id_kecamatan">Kecamatan</label>
@@ -67,6 +52,21 @@
                             </select>
                         </div>
                         <?= form_error('id_kecamatan', '<small class="text-danger">', '</small>'); ?>
+                    </div>
+                </div>
+
+                <div class="row form-group">
+                    <label class="col-md-3 text-md-right" for="id_desa">Desa</label>
+                    <div class="col-md-9">
+                        <div class="input-group">
+                            <select name="id_desa" id="id_desa" class="custom-select">
+                                <option value="" selected disabled>Pilih Desa</option>
+                                <?php foreach ($desa as $k) : ?>
+                                    <option <?= set_select('id_desa', $k['id_desa']) ?> value="<?= $k['id_desa'] ?>"><?= $k['nama_desa'] ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                        </div>
+                        <?= form_error('id_desa', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
 
@@ -185,3 +185,25 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#id_kecamatan").on("change", function(e) {
+        var id_kecamatan = $("#id_kecamatan").val();
+        e.preventDefault();
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            url: 'http://localhost/tjlsppbg/usulan/get_desa/'+id_kecamatan,   
+            success: function(json) {
+                var option = '';
+                option += '<option value="">Pilih Desa</option>';
+                for (var i = 0; i < json.length; i++) {
+                    option += '<option value="' + json[i].id_desa + '">' + json[i].nama_desa +'</option>';
+                }
+                $("#id_desa").html(option);
+            }
+            });
+        e.preventDefault();
+    });
+});
+</script>
