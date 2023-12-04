@@ -19,6 +19,7 @@
             </div>
         </div>
     </div>
+    
     <div class="table-responsive">
         <table class="table table-striped w-100 dt-responsive nowrap" id="dataTable">
             <thead>
@@ -40,33 +41,32 @@
             </thead>
             <tbody>
                 <?php
+                $no = 1;
                 if ($usulan) :
-                    $no = 1;
-                    foreach ($usulan as $s) :
+                    foreach ($usulan as $u) :
                         ?>
                         <tr>
-                            <td><?= $no++; ?></td>
-                            <td><?= $s['nama_kategori']; ?></td>
-                            <td><?= $s['nama_desa']; ?></td>
-                            <td><?= $s['nama_kecamatan']; ?></td>
-                            <td><?= $s['id_program']; ?></td>
-                            <td><?= $s['id_instansi']; ?></td>
-                            <td><?= $s['tahun']; ?></td>
-                            <td><?= $s['dana_usulan']; ?></td>
-                            <td><?= $s['usulan']; ?></td>
-                            <td><?= $s['alamat']; ?></td>
-                            <td><?= $s['status']; ?></td>
-                            <td><?= $s['created_at']; ?></td>
-                            
-                            <th>
-                                <a href="<?= base_url('usulan/edit/') . $s['id'] ?>" class="btn btn-circle btn-warning btn-sm"><i class="fa fa-edit"></i></a>
-                                <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('usulan/delete/') . $s['id'] ?>" class="btn btn-circle btn-danger btn-sm"><i class="fa fa-trash"></i></a>
-                            </th>
+                        <td><?= $no++; ?></td>
+                            <td><?= $u['nama_kategori']; ?></td>
+                            <td><?= $u['nama_desa']; ?></td>
+                            <td><?= $u['nama_kecamatan']; ?></td>
+                            <td><?= $u['id_program']; ?></td>
+                            <td><?= $u['id_instansi']; ?></td>
+                            <td><?= $u['tahun']; ?></td>
+                            <td><?= $u['dana_usulan']; ?></td>
+                            <td><?= $u['usulan']; ?></td>
+                            <td><?= $u['alamat']; ?></td>
+                            <td><?= $u['status']; ?></td>
+                            <td><?= $u['created_at']; ?></td>
+                            <td>
+                                <a href="<?= base_url('usulan/edit/') . $u['id'] ?>" class="btn btn-warning btn-circle btn-sm"><i class="fa fa-edit"></i></a>
+                                <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('usulan/delete/') . $u['id'] ?>" class="btn btn-danger btn-circle btn-sm"><i class="fa fa-trash"></i></a>
+                            </td>
                         </tr>
                     <?php endforeach; ?>
                 <?php else : ?>
                     <tr>
-                        <td colspan="6" class="text-center">
+                        <td colspan="7" class="text-center">
                             Data Kosong
                         </td>
                     </tr>
