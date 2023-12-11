@@ -16,6 +16,7 @@ class Usulan extends CI_Controller
     {
         $data['title'] = "usulan";
         $data['usulan'] = $this->admin->get_join();
+        // die(json_encode($data["usulan"]));
         $this->template->load('templates/dashboard', 'usulan/data', $data);
     }
 
@@ -92,7 +93,7 @@ class Usulan extends CI_Controller
     public function delete($getId)
     {
         $id = encode_php_tags($getId);
-        if ($this->admin->delete('usulan', 'id', $id )) {
+        if ($this->admin->delete('usulan', 'id', $id)) {
             set_pesan('data berhasil dihapus.');
         } else {
             set_pesan('data gagal dihapus.', false);

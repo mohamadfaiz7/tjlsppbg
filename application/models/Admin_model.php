@@ -14,6 +14,12 @@ class Admin_model extends CI_Model
 
     public function get_join()
     {
+        $this->db->select([
+            "a.*",
+            "b.nama_kategori",
+            "c.nama_kecamatan",
+            "d.nama_desa"
+        ]);
         $this->db->join('kategori b', 'a.id_kategori = b.id');
         $this->db->join('kecamatan c', 'a.id_kecamatan = c.id_kecamatan');
         $this->db->join('desa d', 'a.id_desa = d.id_desa');
