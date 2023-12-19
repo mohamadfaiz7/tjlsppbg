@@ -22,8 +22,8 @@ class Perusahaan extends CI_Controller
     private function _validasi()
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim|numeric');
-        $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim|trim');
+        $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|numeric');
     }
 
     public function add()
@@ -54,7 +54,7 @@ class Perusahaan extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = "Perusahaan";
-            $data['ususlan'] = $this->admin->get('ususlan');
+            $data['usulan'] = $this->admin->get('usulan');
             $data['perusahaan'] = $this->admin->get('perusahaan', ['id' => $id]);
             $this->template->load('templates/dashboard', 'perusahaan/edit', $data);
         } else {

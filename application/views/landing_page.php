@@ -50,7 +50,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-lg-auto">
                         <li class="nav-item">
-                                <a class="nav-link click" href="http://localhost/tjlsppbg/usulan/add">Ajukan Usulan</a>
+                                <a class="nav-link click" href="http://localhost/tjlsppbg/landing_page/add">Ajukan Usulan</a>
                             </li>
     
 
