@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Usulan extends CI_Controller
+class Perusahaan extends CI_Controller
 {
     public function __construct()
     {
@@ -15,17 +15,15 @@ class Usulan extends CI_Controller
     public function index()
     {
         $data['title'] = "Perusahaan";
-        $data['perusahaan'] = $this->admin->get('perusahaan')
+        $data['perusahaan'] = $this->admin->get('perusahaan');
         $this->template->load('templates/dashboard', 'perusahaan/data', $data);
     }
 
-
-
     private function _validasi()
     {
-        $this->form_validation->set_rules('nama', 'Nama ', 'required|trim');
-        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim');
-        $this->form_validation->set_rules('no_telp', 'Nomor Telepon ', 'required|trim');
+        $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
+        $this->form_validation->set_rules('alamat', 'Alamat', 'required|trim|numeric');
+        $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim');
     }
 
     public function add()
@@ -34,7 +32,7 @@ class Usulan extends CI_Controller
         if ($this->form_validation->run() == false) {
             $data['title'] = "Perusahaan";
             $data['usulan'] = $this->admin->get('usulan');
-            $this->template->load('templates/dashboard', 'usulan/add', $data);
+            $this->template->load('templates/dashboard', 'perusahaan/add', $data);
         } else {
             $input = $this->input->post(null, true);
             $save = $this->admin->insert('perusahaan', $input);
@@ -56,9 +54,9 @@ class Usulan extends CI_Controller
 
         if ($this->form_validation->run() == false) {
             $data['title'] = "Perusahaan";
-            $data['usulan'] = $this->admin->get('usulan');
+            $data['ususlan'] = $this->admin->get('ususlan');
             $data['perusahaan'] = $this->admin->get('perusahaan', ['id' => $id]);
-            $this->template->load('templates/dashboard', 'usulan/edit', $data);
+            $this->template->load('templates/dashboard', 'perusahaan/edit', $data);
         } else {
             $input = $this->input->post(null, true);
             $update = $this->admin->update('perusahaan', 'id', $id, $input);

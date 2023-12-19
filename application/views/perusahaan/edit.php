@@ -22,23 +22,19 @@
             </div>
             <div class="card-body">
                 <?= $this->session->flashdata('pesan'); ?>
-                <?= form_open('', [], ['id' => $perusahaan['id']]); ?>
+                <?= form_open(); ?>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="nama">Nama</label>
+                    <label class="col-md-3 text-md-right" for="nama">Nama Perusahaan</label>
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('nama', $kategori['nama']); ?>" name="nama" id="nama" type="text" class="form-control" placeholder="Nama ...">
+                            <input value="<?= set_value('nama'); ?>" name="nama" id="nama" type="text" class="form-control" placeholder="Nama Perusahaan...">
                         </div>
                         <?= form_error('nama', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
-
-                <div class="card-body">
-                <?= $this->session->flashdata('pesan'); ?>
-                <?= form_open('', [], ['id' => $perusahaan['id']]); ?>
                 <div class="row form-group">
                     <label class="col-md-3 text-md-right" for="alamat">Alamat</label>
                     <div class="col-md-9">
@@ -46,27 +42,24 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('alamat', $kategori['alamat']); ?>" name="alamat" id="alamat" type="text" class="form-control" placeholder="Nama ...">
+                            <input value="<?= set_value('alamat'); ?>" name="alamat" id="alamat" type="text" class="form-control" placeholder="Alamat...">
                         </div>
                         <?= form_error('alamat', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
-
-                <div class="card-body">
-                <?= $this->session->flashdata('pesan'); ?>
-                <?= form_open('', [], ['id' => $perusahaan['id']]); ?>
                 <div class="row form-group">
                     <label class="col-md-3 text-md-right" for="no_telp">Nomor Telepon</label>
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-phone"></i></span>
                             </div>
-                            <input value="<?= set_value('no_telp', $kategori['no_telp']); ?>" name="no_telp" id="no_telp" type="text" class="form-control" placeholder="Nama ...">
+                            <input value="<?= set_value('no_telp'); ?>" name="no_telp" id="no_telp" type="text" class="form-control" placeholder="Nomor Telepon...">
                         </div>
                         <?= form_error('no_telp', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
+            
                 <div class="row form-group">
                     <div class="col-md-9 offset-md-3">
                         <button type="submit" class="btn btn-primary">Simpan</button>

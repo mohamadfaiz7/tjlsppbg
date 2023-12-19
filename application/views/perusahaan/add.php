@@ -9,7 +9,7 @@
                         </h4>
                     </div>
                     <div class="col-auto">
-                        <a href="<?= base_url('kategori') ?>" class="btn btn-sm btn-secondary btn-icon-split">
+                        <a href="<?= base_url('perusahaan') ?>" class="btn btn-sm btn-secondary btn-icon-split">
                             <span class="icon">
                                 <i class="fa fa-arrow-left"></i>
                             </span>
@@ -24,26 +24,25 @@
                 <?= $this->session->flashdata('pesan'); ?>
                 <?= form_open(); ?>
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="nama">Nama </label>
+                    <label class="col-md-3 text-md-right" for="nama">Nama Perusahaan</label>
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('nama'); ?>" name="nama" id="nama" type="text" class="form-control" placeholder="Nama">
+                            <input value="<?= set_value('nama'); ?>" name="nama" id="nama" type="text" class="form-control" placeholder="Nama Perusahaan...">
                         </div>
                         <?= form_error('nama', '<small class="text-danger">', '</small>'); ?>
                     </div>
                 </div>
-
                 <div class="row form-group">
-                    <label class="col-md-3 text-md-right" for="alamat">Alamat </label>
+                    <label class="col-md-3 text-md-right" for="alamat">Alamat</label>
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('alamat'); ?>" name="alamat" id="alamat" type="text" class="form-control" placeholder="Alamat">
+                            <input value="<?= set_value('alamat'); ?>" name="alamat" id="alamat" type="text" class="form-control" placeholder="Alamat...">
                         </div>
                         <?= form_error('alamat', '<small class="text-danger">', '</small>'); ?>
                     </div>
@@ -53,9 +52,9 @@
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"></i></span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-phone"></i></span>
                             </div>
-                            <input value="<?= set_value('no_telp'); ?>" name="no_telp" id="no_telp" type="text" class="form-control" placeholder="08...">
+                            <input value="<?= set_value('no_telp'); ?>" name="no_telp" id="no_telp" type="text" class="form-control" placeholder="Nomor Telepon...">
                         </div>
                         <?= form_error('no_telp', '<small class="text-danger">', '</small>'); ?>
                     </div>
