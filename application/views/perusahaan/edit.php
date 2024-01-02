@@ -52,9 +52,9 @@
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-phone"></i></span>
+                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('no_telp'); ?>" name="no_telp" id="no_telp" type="text" class="form-control" placeholder="Nomor Telepon...">
+                            <input value="<?= set_value('no_telp'); ?>" name="no_telp" id="no_telp" type="text" class="form-control" placeholder="08...">
                         </div>
                         <?= form_error('no_telp', '<small class="text-danger">', '</small>'); ?>
                     </div>

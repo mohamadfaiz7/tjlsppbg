@@ -87,28 +87,28 @@
             </li>
 
             <!-- Divider -->
-            <hr class="sidebar-divider">
+            <!--<hr class="sidebar-divider">-->
 
             <!-- Heading -->
-            <div class="sidebar-heading">
+           <!-- <div class="sidebar-heading">
                 Transaksi
-            </div>
+            </div>-->
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+           <!-- <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('barangmasuk'); ?>">
                     <i class="fas fa-fw fa-download"></i>
                     <span>Barang Masuk</span>
                 </a>
-            </li>
+            </li>-->
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link" href="<?= base_url('barangkeluar'); ?>">
                     <i class="fas fa-fw fa-upload"></i>
                     <span>Barang Keluar</span>
                 </a>
-            </li>
+            </li>-->
 
             <!-- Divider -->
             <hr class="sidebar-divider">
