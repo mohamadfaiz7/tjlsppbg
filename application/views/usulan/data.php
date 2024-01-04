@@ -8,14 +8,14 @@
                 </h4>
             </div>
             <div class="col-auto">
-                <a href="<?= base_url('usulan/add') ?>" class="btn btn-sm btn-primary btn-icon-split">
+                <!-- <a href="<?= base_url('usulan/add') ?>" class="btn btn-sm btn-primary btn-icon-split">
                     <span class="icon">
                         <i class="fa fa-plus"></i>
                     </span>
                     <span class="text">
                         Tambah Usulan
                     </span>
-                </a>
+                </a> -->
             </div>
         </div>
     </div>
@@ -59,7 +59,10 @@
                             <td><?= $u['status']; ?></td>
                             <td><?= $u['created_at']; ?></td>
                             <td>
-                                <a href="<?= base_url('usulan/edit/') . $u['id'] ?>" class="btn btn-warning btn-circle btn-sm"><i class="fa fa-edit"></i></a>
+                               <!-- <a href="<?= base_url('usulan/edit/') . $u['id'] ?>" class="btn btn-warning btn-circle btn-sm"><i class="fa fa-edit"></i></a>-->
+                                <?php if($u['status'] == 'Free'){ ?>
+                                <a onclick="return confirm('Verifikasi data disetujui?')" href="<?= base_url('usulan/verifikasi/') . $u['id'] ?>" class="btn btn-success btn-circle btn-sm"><i class="fa fa-check"></i></a>
+                                <?php } ?>
                                 <a onclick="return confirm('Yakin ingin hapus?')" href="<?= base_url('usulan/delete/') . $u['id'] ?>" class="btn btn-danger btn-circle btn-sm"><i class="fa fa-trash"></i></a>
                             </td>
                         </tr>

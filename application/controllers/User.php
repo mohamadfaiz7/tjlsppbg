@@ -22,7 +22,7 @@ class User extends CI_Controller
         $this->template->load('templates/dashboard', 'user/data', $data);
     }
 
-    private function _validasi($mode)
+    private function _validasi($mode, $id)
     {
         $this->form_validation->set_rules('nama', 'Nama', 'required|trim');
         $this->form_validation->set_rules('no_telp', 'Nomor Telepon', 'required|trim');
@@ -34,7 +34,7 @@ class User extends CI_Controller
             $this->form_validation->set_rules('password', 'Password', 'required|min_length[3]|trim');
             $this->form_validation->set_rules('password2', 'Konfirmasi Password', 'matches[password]|trim');
         } else {
-            $db = $this->admin->get('user', ['id_user' => $this->input->post('id_user', true)]);
+            $db = $this->admin->get('user', ['id_user' => $id]);
             $username = $this->input->post('username', true);
             $email = $this->input->post('email', true);
 
@@ -48,7 +48,7 @@ class User extends CI_Controller
 
     public function add()
     {
-        $this->_validasi('add');
+        $this->_validasi('add', '');
 
         if ($this->form_validation->run() == false) {
             $data['title'] = "Tambah User";
@@ -79,7 +79,7 @@ class User extends CI_Controller
     public function edit($getId)
     {
         $id = encode_php_tags($getId);
-        $this->_validasi('edit');
+        $this->_validasi('edit', $id);
 
         if ($this->form_validation->run() == false) {
             $data['title'] = "Edit User";

@@ -133,7 +133,7 @@
     </div>
 </div>
 
-<div class="row">
+<!--<div class="row"> Stok Barang
     <div class="col-md-4">
         <div class="card shadow mb-4">
             <div class="card-header bg-warning py-3">

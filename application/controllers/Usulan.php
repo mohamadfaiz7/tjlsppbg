@@ -100,4 +100,20 @@ class Usulan extends CI_Controller
         }
         redirect('usulan');
     }
+
+    public function verifikasi($getId)
+    {
+        $id = encode_php_tags($getId);
+        $data = array(
+            'status' => 'Terverifikasi',
+        );
+        $this->db->set($data);
+        $this->db->where('id', $id);
+        if ($this->db->update('usulan')) {
+            set_pesan('data diverifikasi.');
+        } else {
+            set_pesan('data gagal diverifikasi.', false);
+        }
+        redirect('usulan');
+    }
 }

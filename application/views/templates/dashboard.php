@@ -80,11 +80,11 @@
                 </a>
             </li>
 
-            <li class="nav-item">
+            <!--<li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('perusahaan'); ?>">
                     <span>Perusahaan</span>
                 </a>
-            </li>
+            </li>-->
 
             <!-- Divider -->
             <!--<hr class="sidebar-divider">-->

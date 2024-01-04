@@ -22,17 +22,17 @@ class Laporan extends CI_Controller
             $this->template->load('templates/dashboard', 'laporan/form', $data);
         } else {
             $input = $this->input->post(null, true);
-            $table = $input['transaksi'];
+            $table = $input['usulan'];
             $tanggal = $input['tanggal'];
             $pecah = explode(' - ', $tanggal);
             $mulai = date('Y-m-d', strtotime($pecah[0]));
             $akhir = date('Y-m-d', strtotime(end($pecah)));
 
             $query = '';
-            if ($table == 'barang_masuk') {
-                $query = $this->admin->getBarangMasuk(null, null, ['mulai' => $mulai, 'akhir' => $akhir]);
+            if ($table == 'usulan') {
+                $query = $this->admin->getKategori(null, null, ['mulai' => $mulai, 'akhir' => $akhir]);
             } else {
-                $query = $this->admin->getBarangKeluar(null, null, ['mulai' => $mulai, 'akhir' => $akhir]);
+                $query = $this->admin->getUsulan(null, null, ['mulai' => $mulai, 'akhir' => $akhir]);
             }
 
             $this->_cetak($query, $table, $tanggal);

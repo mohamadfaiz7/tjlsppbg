@@ -71,11 +71,11 @@
                     <div class="col-md-6">
                         <div class="custom-control custom-radio">
                             <input <?= set_radio('role', 'admin'); ?> value="admin" type="radio" id="admin" name="role" class="custom-control-input">
-                            <label class="custom-control-label" for="admin">Admin</label>
+                            <label class="custom-control-label" for="admin">User Admin</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input <?= set_radio('role', 'gudang'); ?> value="gudang" type="radio" id="gudang" name="role" class="custom-control-input">
-                            <label class="custom-control-label" for="gudang">Gudang</label>
+                            <input <?= set_radio('role', 'perusahaan'); ?> value="perusahaan" type="radio" id="perusahaan" name="role" class="custom-control-input">
+                            <label class="custom-control-label" for="perusahaan">User Perusahaan</label>
                         </div>
                         <?= form_error('role', '<span class="text-danger small">', '</span>'); ?>
                     </div>

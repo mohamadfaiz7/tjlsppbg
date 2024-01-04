@@ -155,7 +155,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"></i></span>
                             </div>
-                            <input value="<?= set_value('status'); ?>" name="status" id="status" type="text" class="form-control" placeholder="Status...">
+                            <input value="<?= set_value('status'); ?>" name="status" id="status" type="text" class="form-control" placeholder="Isikan Free saja...">
                         </div>
                         <?= form_error('status', '<small class="text-danger">', '</small>'); ?>
                     </div>

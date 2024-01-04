@@ -28,7 +28,7 @@
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
+                                <span class="input-group-text" id="basic-addon1"><i class=""></i></span>
                             </div>
                             <input value="<?= set_value('nama_kategori', $kategori['nama_kategori']); ?>" name="nama_kategori" id="nama_kategori" type="text" class="form-control" placeholder="Nama kategori...">
                         </div>
@@ -40,9 +40,9 @@
                     <div class="col-md-9">
                         <div class="input-group">
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-home"></i></span>
+                                <span class="input-group-text" id="basic-addon1"><i class=""></i></span>
                             </div>
-                            <textarea name="created_at" id="created_at" class="form-control" placeholder="Created At..."><?= set_value('created_at', $kategori['created_at']); ?></textarea>
+                            <input value="<?= set_value('created_at', $kategori['created_at']); ?>" name="created_at" id="created_at" type="text" class="form-control" placeholder="...">
                         </div>
                         <?= form_error('created_at', '<small class="text-danger">', '</small>'); ?>
                     </div>

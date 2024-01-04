@@ -32,7 +32,7 @@
                             <select name="id_kategori" id="id_kategori" class="custom-select">
                                 <option value="" selected disabled>Pilih Kategori</option>
                                 <?php foreach ($kategori as $k) : ?>
-                                    <option <?= set_select('id_kategori', $k['id']) ?> value="<?= $k['id'] ?>"><?= $k['nama_kategori'] ?></option>
+                                    <option <?= set_select('id_kategori', $k['id']) ?> value="<?= $k['id'] ?>" <?php if($usulan['id_kategori'] == $k['id']){ echo "selected";} ?>><?= $k['nama_kategori'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -48,7 +48,7 @@
                             <select name="id_kecamatan" id="id_kecamatan" class="custom-select">
                                 <option value="" selected disabled>Pilih Kecamatan</option>
                                 <?php foreach ($kecamatan as $k) : ?>
-                                    <option <?= set_select('id_kecamatan', $k['id_kecamatan']) ?> value="<?= $k['id_kecamatan'] ?>"><?= $k['nama_kecamatan'] ?></option>
+                                    <option <?= set_select('id_kecamatan', $k['id_kecamatan']) ?> value="<?= $k['id_kecamatan'] ?>" <?php if($usulan['id_kecamatan'] == $k['id_kecamatan']){ echo "selected";} ?>><?= $k['nama_kecamatan'] ?></option>
                                 <?php endforeach; ?>
                             </select>
                         </div>
@@ -78,7 +78,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('id_program'); ?>" name="id_program" id="id_program" type="text" class="form-control" placeholder="Program...">
+                            <input value="<?= set_value('id_program', $usulan['id_program']); ?>" name="id_program" id="id_program" type="text" class="form-control" placeholder="Program...">
                         </div>
                         <?= form_error('id_program', '<small class="text-danger">', '</small>'); ?>
                     </div>
@@ -91,7 +91,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1"><i class="fa fa-fw fa-user"></i></span>
                             </div>
-                            <input value="<?= set_value('id_instansi'); ?>" name="id_instansi" id="id_instansi" type="text" class="form-control" placeholder="Instansi...">
+                            <input value="<?= set_value('id_instansi', $usulan['id_instansi']); ?>" name="id_instansi" id="id_instansi" type="text" class="form-control" placeholder="Instansi...">
                         </div>
                         <?= form_error('id_instansi', '<small class="text-danger">', '</small>'); ?>
                     </div>
