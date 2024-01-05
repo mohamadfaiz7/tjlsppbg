@@ -39,16 +39,16 @@ class Landing_Page extends CI_Controller {
             $data['kategori'] = $this->admin->get('kategori');
             $data['desa'] = $this->admin->get('desa');
             $data['kecamatan'] = $this->admin->get('kecamatan');
-            $this->template->load('templates/publik', 'usulan/add_publik', $data);
+            $this->template->load('templates/publik', 'landing_page/add_publik', $data);
         } else {
             $input = $this->input->post(null, true);
             $save = $this->admin->insert('usulan', $input);
             if ($save) {
                 set_pesan('data berhasil disimpan.');
-                redirect('usulan');
+                redirect('landing_page');
             } else {
                 set_pesan('data gagal disimpan', false);
-                redirect('usulan/add');
+                redirect('landing_page/add_publik');
             }
         }
     }

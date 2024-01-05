@@ -65,13 +65,14 @@
             <div class="sidebar-heading">
                 Data Master
             </div>
-
+            <?php if (is_admin()) : ?>
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
                 <a class="nav-link pb-0" href="<?= base_url('kategori'); ?>">
                     <span>Kategori</span>
                 </a>
             </li>
+            <?php endif; ?>
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item">
@@ -110,6 +111,7 @@
                 </a>
             </li>-->
 
+            <?php if (is_admin()) : ?>
             <!-- Divider -->
             <hr class="sidebar-divider">
 
@@ -124,6 +126,7 @@
                     <span>Cetak Laporan</span>
                 </a>
             </li>
+            <?php endif; ?>
 
             <?php if (is_admin()) : ?>
                 <!-- Divider -->
